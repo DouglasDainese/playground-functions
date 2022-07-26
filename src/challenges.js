@@ -2,10 +2,10 @@
 // Desafio concluido com auxilio do esquenta do dia 26/07/2022.
 
 function compareTrue(param1, param2) {
-  if (param1 === true && param2 === true) {
-  return true} 
-  else {
-  return false
+    if (param1 === true && param2 === true) {
+     return true} 
+    else {
+     return false
     }
 }
 
@@ -14,17 +14,31 @@ function calcArea(base, height) {
   return (base * height) / 2;
 }
 
-console.log(calcArea(10, 50));
+// console.log(calcArea(10, 50));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Desafio concluido com ajuda de colega de turma ligiabicalho;
+
+// let frase = 'go trybe';
+// let frase2 = "vamo que vamos";
+// const frase3 = 'foguete';
+
+function splitSentence(frase) {
+  let result = [];
+  result = frase.split(' ');
+  return result;
 }
+// console.log(splitSentence(frase3));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+let estutante1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+
+function concatName(estudante1) {
+  let nomeConcat = estudante1[ estudante1.length - 1 ] + ', ' + estudante1[0];
+  return nomeConcat;
 }
+// console.log(concatName(estutante1));
 
 // Desafio 5
 function footballPoints() {
