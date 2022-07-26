@@ -1,6 +1,12 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+// Desafio concluido com auxilio do esquenta do dia 26/07/2022.
+
+function compareTrue(param1, param2) {
+    if (param1 === true && param2 === true) {
+    return true } 
+    else {
+    return false
+    }
 }
 
 // Desafio 2
