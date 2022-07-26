@@ -2,17 +2,19 @@
 // Desafio concluido com auxilio do esquenta do dia 26/07/2022.
 
 function compareTrue(param1, param2) {
-    if (param1 === true && param2 === true) {
-    return true } 
-    else {
-    return false
+  if (param1 === true && param2 === true) {
+  return true} 
+  else {
+  return false
     }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base * height) / 2;
 }
+
+console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence() {
