@@ -2,11 +2,11 @@
 // Desafio concluido com auxilio do esquenta do dia 26/07/2022.
 
 function compareTrue(param1, param2) {
-    if (param1 === true && param2 === true) {
-     return true} 
-    else {
-     return false
-    }
+if (param1 === true && param2 === true) {
+  return true} 
+  else {
+  return false
+}
 }
 
 // Desafio 2
@@ -52,9 +52,30 @@ function footballPoints(wins, ties) {
 // console.log(footballPoints(0,0));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+// Desafio concluído com a ajuda da tread: https://trybecourse.slack.com/archives/C03NDPN4132/p1658872280700799
+
+// let numerosTeste = [1, 9, 2, 3, 9, 5, 7];
+// let numerosTeste2 = [0, 4, 4, 4, 9, 2, 1];
+
+function highestCount(numerosTeste) {
+  let bigNumber = numerosTeste[0];
+  let accountBigNumber = 0;
+
+  for (let i = 0; i < numerosTeste.length; i += 1) {
+    for (let i2 = 0; i2 < numerosTeste.length; i2 += 1) {
+      if (numerosTeste[i] > numerosTeste[i2] && numerosTeste[i] >= bigNumber) {
+        bigNumber = numerosTeste[i];
+      }
+    }
+  }
+  for (let i3 = 0; i3 < numerosTeste.length; i3 += 1) {
+    if (bigNumber === numerosTeste[i3]) {
+      accountBigNumber += 1;
+    }
+  }
+  return accountBigNumber;
 }
+// console.log(highestCount(numerosTeste));
 
 // Desafio 7
 function catAndMouse() {
