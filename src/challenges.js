@@ -38,7 +38,7 @@ function concatName(estudante1) {
   let nomeConcat = estudante1[ estudante1.length - 1 ] + ', ' + estudante1[0];
   return nomeConcat;
 }
-// console.log(concatName(estutante1));
+// console.log(concatName(estutante1))c;
 
 // Desafio 5
 function footballPoints() {
