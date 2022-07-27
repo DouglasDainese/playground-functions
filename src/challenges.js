@@ -85,6 +85,7 @@ let cat2 = 20;
 
 function catAndMouse(mouse, cat1, cat2) {
   let distancCat1 = Math.abs(cat1 - mouse);
+  // Essa parte do codigo consegui resolver com auxilio da tread: https://trybecourse.slack.com/archives/C03NDPN4132/p1658868938653249
   let distancCat2 = Math.abs(cat2 - mouse);
 
   if (distancCat1 < distancCat2) {
@@ -97,13 +98,31 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'os gatos trombam e o rato foge';
   }  
 }
-console.log(catAndMouse(2, 0, 4));
-
+// console.log(catAndMouse(2, 0, 4));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+let paramTest = [9, 25, 30, 2];
+
+function fizzBuzz(paramTest) {
+  let array = [];
+  for (let i = 0; i < paramTest.length; i += 1) {
+    if (paramTest[i] % 3 === 0 && paramTest[i] % 5 !== 0 ){ // 
+        array.push('fizz');
+    }
+    else if (paramTest[i] % 5 === 0 && paramTest[i] % 3 !== 0){
+      array.push('buzz');
+    }
+    else if (paramTest[i] % 3 === 0 && paramTest[i] % 5 === 0) {
+      array.push('fizzBuzz');
+    }
+    else {
+      array.push('bug!');
+    }
+  }
+  return array;
 }
+console.log (fizzBuzz(paramTest));
 
 // Desafio 9
 function encode() {
