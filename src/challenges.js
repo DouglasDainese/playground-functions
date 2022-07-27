@@ -32,7 +32,7 @@ function splitSentence(frase) {
 
 // Desafio 4
 
-let estutante1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// let estutante1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 function concatName(estudante1) {
   let nomeConcat = estudante1[ estudante1.length - 1 ] + ', ' + estudante1[0];
@@ -78,9 +78,27 @@ function highestCount(numerosTeste) {
 // console.log(highestCount(numerosTeste));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+
+let mouse = 10;
+let cat1 = 20;
+let cat2 = 20;
+
+function catAndMouse(mouse, cat1, cat2) {
+  let distancCat1 = Math.abs(cat1 - mouse);
+  let distancCat2 = Math.abs(cat2 - mouse);
+
+  if (distancCat1 < distancCat2) {
+    return "cat1";
+  }
+  else if (distancCat1 > distancCat2){
+    return "cat2";
+  }
+  else if (distancCat1 == distancCat2) {
+    return 'os gatos trombam e o rato foge';
+  }  
 }
+console.log(catAndMouse(2, 0, 4));
+
 
 // Desafio 8
 function fizzBuzz() {
