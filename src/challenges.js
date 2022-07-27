@@ -101,7 +101,6 @@ function catAndMouse(mouse, cat1, cat2) {
 // console.log(catAndMouse(2, 0, 4));
 
 // Desafio 8
-
 let paramTest = [9, 25, 30, 2];
 
 function fizzBuzz(paramTest) {
@@ -122,15 +121,63 @@ function fizzBuzz(paramTest) {
   }
   return array;
 }
-console.log (fizzBuzz(paramTest));
+//console.log (fizzBuzz(paramTest))
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+let stringCode = 'go trybe';
+function encode(stringCode) {
+  let stringEncode = '';
+  for (let i of stringCode) {
+    if (i == "a"){
+    stringEncode += '1';
+    }
+    else if (i == 'e') {
+      stringEncode += '2';
+    }
+    else if (i == 'i') {
+      stringEncode += '3';
+    }
+    else if (i == 'o') {
+      stringEncode += '4';
+    }
+    else if (i == 'u') {
+      stringEncode += '5';
+    }
+    else {
+      stringEncode += i;
+    }
+  } 
+   return stringEncode;
 }
-function decode() {
-  // seu código aqui
-}
+console.log(encode(stringCode));
+
+let stringDecode = 'g4 tryb2';
+
+function decode(stringDecode) {
+    let stringDecodificada = '';
+    for (let i of stringDecode) {
+      if (i == "1"){
+      stringDecodificada += 'a';
+      }
+      else if (i == '2') {
+      stringDecodificada += 'e';
+      }
+      else if (i == '3') {
+      stringDecodificada += 'i';
+      }
+      else if (i == '4') {
+      stringDecodificada += 'o';
+      }
+      else if (i == '5') {
+      stringDecodificada += 'u';
+      }
+      else {
+        stringDecodificada += i;
+      }
+    } 
+     return stringDecodificada;
+  }
+console.log(decode(stringDecode));
 
 // Desafio 10
 function techList() {
