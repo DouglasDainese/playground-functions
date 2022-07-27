@@ -2,13 +2,10 @@
 // Desafio concluido com auxilio do esquenta do dia 26/07/2022.
 
 function compareTrue(param1, param2) {
-if (param1 === true && param2 === true) {
-  return true} 
-  else {
-  return false
+  if (param1 === true && param2 === true) {
+    return true;
+  }
 }
-}
-
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
@@ -60,7 +57,6 @@ function footballPoints(wins, ties) {
 function highestCount(numerosTeste) {
   let bigNumber = numerosTeste[0];
   let accountBigNumber = 0;
-
   for (let i = 0; i < numerosTeste.length; i += 1) {
     for (let i2 = 0; i2 < numerosTeste.length; i2 += 1) {
       if (numerosTeste[i] > numerosTeste[i2] && numerosTeste[i] >= bigNumber) {
@@ -76,13 +72,10 @@ function highestCount(numerosTeste) {
   return accountBigNumber;
 }
 // console.log(highestCount(numerosTeste));
-
 // Desafio 7
-
-let mouse = 10;
-let cat1 = 20;
-let cat2 = 20;
-
+// let mouse = 10;
+// let cat1 = 20;
+// let cat2 = 20;
 function catAndMouse(mouse, cat1, cat2) {
   let distancCat1 = Math.abs(cat1 - mouse);
   // Essa parte do codigo consegui resolver com auxilio da tread: https://trybecourse.slack.com/archives/C03NDPN4132/p1658868938653249
@@ -121,10 +114,10 @@ function fizzBuzz(paramTest) {
   }
   return array;
 }
-//console.log (fizzBuzz(paramTest))
+// console.log (fizzBuzz(paramTest))
 
 // Desafio 9
-let stringCode = 'go trybe';
+//  let stringCode = 'go trybe';
 function encode(stringCode) {
   let stringEncode = '';
   for (let i of stringCode) {
@@ -149,10 +142,8 @@ function encode(stringCode) {
   } 
    return stringEncode;
 }
-console.log(encode(stringCode));
-
-let stringDecode = 'g4 tryb2';
-
+// console.log(encode(stringCode));
+//  let stringDecode = 'g4 tryb2';
 function decode(stringDecode) {
     let stringDecodificada = '';
     for (let i of stringDecode) {
@@ -177,7 +168,7 @@ function decode(stringDecode) {
     } 
      return stringDecodificada;
   }
-console.log(decode(stringDecode));
+// console.log(decode(stringDecode));
 
 // Desafio 10
 function techList() {
