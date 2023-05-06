@@ -2,7 +2,7 @@
 
 <h2> Sobre este projeto: </h2>
 
-<p> Este projeto eu desenvolvi como parte do meu curso de desenvolvimento FullStack na Trybe, esse é meu primeiro projeto usando JavaScript e é um consjunto de função para exercitar logica de programação e por em pratica todos os aprendizados que obtive durante o bloco de introdução ao JavaScript.
+<p> Este projeto eu desenvolvi como parte do meu curso de desenvolvimento FullStack na Trybe, esse é meu primeiro projeto usando JavaScript e é um conjunto de funções para exercitar logica de programação e por em pratica todos os aprendizados que obtive durante o bloco de introdução ao JavaScript.
 <br />
 
 <details>
